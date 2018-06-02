@@ -1,0 +1,13 @@
+<div class="login">
+  <h2>Login</h2>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="usuario.nome" placeholder="Enter your user" type="text">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="usuario.senha" placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+  </mat-form-field>
+
+  <button mat-raised-button type="submit" (click)="fazerLogin()" color="primary">Login</button>
+</div>

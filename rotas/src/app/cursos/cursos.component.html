@@ -1,0 +1,9 @@
+<p>Lista de Cursos</p>
+<p>Página: {{ pagina }}</p>
+<mat-list>
+  <mat-list-item *ngFor="let curso of cursos" [routerLink]="['/cursos', curso.id]">
+    {{ curso.nome }}
+  </mat-list-item>
+</mat-list>
+
+<button mat-raised-button (click)="proximaPagina()">Próxima página</button>

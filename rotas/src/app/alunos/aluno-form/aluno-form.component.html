@@ -1,0 +1,19 @@
+<p>
+  Criar/Editar aluno:
+</p>
+
+
+<div class="">
+  <mat-form-field>
+    <input id="id" matInput type="text" placeholder="#" [(ngModel)]="aluno.id">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input id="nome" matInput placeholder="Nome" [(ngModel)]="aluno.nome" (input)="onInput()">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input id="email" matInput placeholder="Email" [(ngModel)]="aluno.email">
+  </mat-form-field>
+
+</div>

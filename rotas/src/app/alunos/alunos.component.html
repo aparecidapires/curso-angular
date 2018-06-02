@@ -1,0 +1,12 @@
+<mat-nav-list>
+  <mat-list-item *ngFor="let aluno of alunos">
+    <a matLine [routerLink]="[aluno.id]">{{ aluno.nome }}</a>
+    <button mat-icon-button>
+      <mat-icon>info</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-nav-list>
+
+<hr>
+
+<router-outlet></router-outlet>
